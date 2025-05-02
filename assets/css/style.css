@@ -17,6 +17,22 @@
   font-family: 'SourGummy';
   src: url(SourGummy.ttf);
 }
+@font-face {
+  font-family: 'Eloquia';
+  src: url(eloquia.ttf);
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url(NunitoSans.ttf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: 'MontserratBold';
+  src: url(Montserrat-SemiBold.ttf);
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -513,7 +529,8 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
-.facts .count-box {
+
+/* .facts .count-box {
   padding: 30px 30px 25px 30px;
   margin-top: 30px;
   width: 100%;
@@ -550,7 +567,7 @@ section {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Akills
