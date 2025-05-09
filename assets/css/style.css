@@ -402,7 +402,103 @@ h6 {
     line-height: 24px;
   }
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#ABOUT ME SECTION (I ADDED THIS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 200px;
+  margin-left: 50px;
+  margin-top: 70px;
+}
 
+.profile-pic {
+  width: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-top: 100px;
+  
+}
+
+.tab-container {
+  width: 600px;
+  height: 470px;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  background-color: rgb(6, 23, 50);
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(6, 23, 50);
+  border-bottom: 2px solid transparent;
+  overflow: hidden;
+}
+
+.tab.active {
+  border-bottom: 2px solid #61afef;
+  font-weight: bold;
+}
+
+.tab-content {
+  flex: 1;
+  background-color: #192e4e;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  display: none;
+  overflow: hidden;
+  
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-inner {
+  margin-left: 0px;
+  line-height: 34px;
+  justify-content: center;
+    /* horizontal */
+  align-items: center;
+    /* vertical */
+}
+
+.tag {
+  color: #ff7b72;
+}
+
+.attribute {
+  color: #e6c07b;
+}
+
+.value {
+  color: #61afef;
+}
+
+.emoji{
+  color: #56b6c2;
+}
+.emoji_final {
+  color: #56b6c2;
+  font-size: 24px;
+}
+
+.content_text{
+  color: rgb(255, 255, 255);
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

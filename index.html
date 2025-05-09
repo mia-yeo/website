@@ -87,115 +87,78 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
+    
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
-        <!-- <div class="section-title">
-          <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div> -->
-
-        <div class="row">
-          <h2 style="font-family: 'Montserrat'; margin-left: 50px;">about me...</h2>
-
-            <!-- <img src="assets/img/miayeo.png" class="img-fluid" alt=""> -->
+        <h2 style="font-family: 'Montserrat'; margin-left: 50px; color: rgb(1, 2, 3)">about me...</h2>
+    
+        <div class="about-wrapper">
         
-          </div>
-          <!-- start of attempt --> <!-- BACK TO JUST IN CASE -->
-          <!-- About Me Tab + Content -->
-          <div class="col-lg-8">
-            <div class="about-me-box">
-          
+    
+          <!-- Tabbed Content -->
+          <div class="tab-container">
+            <div class="tabs">
+              <div class="tab active" data-tab="about-tab">html</div>
+              <div class="tab" data-tab="projects">visual bio</div>
             </div>
-          
-            <div class="about-me-content">
+    
+            <div id="about-tab" class="tab-content active">
               <pre>
-
-    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"about-me"</span><span
-      class="tag">&gt;</span>
-    <span class="tag">&lt;h2</span> <span class="attribute">style=</span><span class="value">"font-size: 16px; color:
-      rgb(61, 149, 226);"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"about-me"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attribute">style=</span><span class="value">"font-size: 16px; color: rgb(255, 255, 255);"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;img</span> <span class="attribute">src=</span><span class="value">"selfie.jpg"</span>
-    <span class="emoji">&amp;#128513;</span> <span class="info">Full Name: Mia Ashley Yeo</span>
-    <span class="emoji">&amp;#127968;</span> <span class="info">Hometown: Walnut Creek, CA</span>
-    <span class="emoji">&amp;#129517;</span> <span class="info">Life Abroad: New Delhi, India (4 yrs), Seoul (3 yrs), Taipei (1 yr)</span>
-    <span class="emoji">&amp;#127891;</span> <span class="info">Undergrad: University of California, Irvine</span>
-    <span class="emoji">&amp;#128187;</span> <span class="info">Major: Computer Science</span>
-    <span class="emoji">&amp;#129504;</span> <span class="info">Specialization: Intelligent Systems</span>
-    <span class="emoji">&amp;#128150;</span> <span class="info">Pronouns: She/Her</span>
-    <span class="emoji">&amp;#127880;</span> <span class="info">Hobbies: Crocheting, painting, doodling, puzzles, traveling</span>
+    <span class="emoji">&amp#128513;</span> <span class = "content_text" </span>Full Name: Mia Ashley Yeo
+    <span class="emoji">&amp#127968;</span> Hometown: Walnut Creek, CA
+    <span class="emoji">&amp#129517;</span> Life Abroad: Taipei, Taiwan (1 yr), 
+              Seoul, South Korea (3 yrs), 
+              and New Delhi, India (4 yrs)
+    <span class="emoji">&amp#127891;</span> Undergraduate: University of California, Irvine
+    <span class="emoji">&amp#128187;</span> Major: Computer Science
+    <span class="emoji">&amp#129504;</span> Specialization: Intelligent Systems
+    <span class="emoji">&amp#128150;</span> Pronouns: She/Her
+    <span class="emoji">&amp#127880;</span> Hobbies: Crocheting, painting, doodling, puzzles, 
+              and traveling
     <span class="tag">&lt;/h2&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
               </pre>
             </div>
-            <img src="assets/img/miayeo.jpg" alt="Mia Ashley Yeo"
-              style="width: 27%; height: auto; margin-left: 225px; border-radius: 30px; margin-top: 20px;">
+    
+            <div id="projects" class="tab-content">
+              <div class="tab-inner">
+                <pre>
+    <span class="emoji_final">&#128513;</span> <span class="content_text" </span> Full Name: Mia Ashley Yeo
+    <span class="emoji_final">&#127968;</span> Hometown: Walnut Creek, CA
+    <span class="emoji_final">&#129517;</span> Life Abroad: Taipei, Taiwan (1 yr), Seoul, South Korea (3 yrs), 
+                    and New Delhi, India (4 yrs)
+    <span class="emoji_final">&#127891;</span> Undergraduate: University of California, Irvine
+    <span class="emoji_final">&#128187;</span> Major: Computer Science
+    <span class="emoji_final">&#129504;</span> Specialization: Intelligent Systems
+    <span class="emoji_final">&#128150;</span> Pronouns: She/Her
+    <span class="emoji_final">&#127880;</span> Hobbies: Crocheting, painting, doodling, puzzles, and traveling
+                </pre>
+              </div>
+            </div>
           </div>
+          <!-- Profile Picture -->
+          <img src="assets/img/miayeo.jpg" class="profile-pic" alt="Profile Picture" />
         </div>
       </div>
     </section>
-              
-    <style>
-      .about-me-box {
-        background-color: rgb(82, 120, 182);
-        padding: 10px;
-        border-radius: 12px 12px 0 0;
-        border: 2px solid #ffffff;
-        border-bottom: none;
-        width: 500px;
-        color: white;
-        font-size: 14px;
-        margin-left: 100px;
-        margin-top: 30px;
-        line-height: 30px;
-      }
     
-      .about-me-content {
-        border: 2px solid #ffffff;
-        padding: 20px;
-        background-color: #0a1e3c;
-        width: 500px;
-        margin-left: 100px;
-        border-radius: 0 0 12px 12px;
-        position: relative;
-        top: -2px;
-        z-index: 1;
-      }
-    
-      .about-me-content pre {
-        margin: 0;
-        white-space: pre-wrap;
-      }
-    
-      /* Syntax Highlighting */
-      .tag {
-        color: #ff7b72;
-        font-size: 12px;
-      }
-    
-      .attribute {
-        color: #e6c07b;
-        font-size: 12px;
-      }
-    
-      .value {
-        color: #61afef;
-        font-size: 12px;
-      }
-    
-      .emoji {
-        color: #56b6c2;
-        font-size: 12px;
-      }
-    
-      .info {
-        color: #ffffff;
-        font-size: 12px;
-      
-        /* font-family: 'Montserrat', sans-serif;
-        margin-left: 780px; */
-      }
-    </style>
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+
+          tab.classList.add('active');
+          document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+        });
+      });
+    </script>
 
 
 
