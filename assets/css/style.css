@@ -409,7 +409,7 @@ h6 {
   display: flex;
   align-items: flex-start;
   gap: 200px;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 70px;
 }
 
@@ -418,11 +418,12 @@ h6 {
   border-radius: 15px;
   object-fit: cover;
   margin-top: 100px;
+  margin-right: 200px;
   
 }
 
 .tab-container {
-  width: 600px;
+  width: 650px;
   height: 470px;
   border: 2px solid white;
   border-radius: 20px;
@@ -498,6 +499,158 @@ h6 {
 
 .content_text{
   color: rgb(255, 255, 255);
+}
+/* ----------------------------
+#EDUCATION SECTION TABS I ADDED THIS
+-------------------------------*/
+.tab-container-ed {
+  position: relative;
+  width: 550px;
+  height: 450px;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 12px #61afef, 0 0 24px #61afef;
+  margin-left: 600px;
+  margin-top: -450px;;
+}
+
+.tabs-ed {
+  display: flex;
+  background-color: rgb(6, 23, 50);
+}
+
+.tab-ed {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(0, 21, 113);
+  background-color: rgb(134, 199, 255);
+  border-bottom: 2px solid transparent;
+  overflow: hidden;
+}
+
+.tab-ed.active {
+  border-bottom: 2px solid #61afef;
+  background-color: white;
+  font-weight: bold;
+}
+
+.tab-content-ed {
+  flex: 1;
+  background-color: #fafafa;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  display: none;
+  overflow: hidden;
+
+}
+
+.tab-content-ed.active {
+  display: block;
+}
+
+.tab-inner-ed {
+  margin-left: 0px;
+  line-height: 34px;
+  justify-content: center;
+  /* horizontal */
+  align-items: center;
+  /* vertical */
+}
+
+.image-container {
+  position: relative;
+  width: 40%;
+  margin-left: 75px;
+  margin-top: 10px;
+  width: auto;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 50px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.text-overlay {
+  position: absolute;
+  margin-left: 260px;
+  margin-top: -450px;
+  /* top: 0%;
+        left: 30%; */
+  transform: translate(-55%, -50%);
+  font-family: 'Montserratbold', sans-serif;
+  font-size: 24px;
+  color: rgb(134, 199, 255);
+  /* font-weight: bold; */
+}
+
+.text-overlay-smaller {
+  position: absolute;
+  /* top: 10%;
+        left: 29%; */
+  margin-top: -400px;
+  margin-left: 250px;
+  transform: translate(-55%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #CC8F00;
+  background-color: #FFEDC2;
+  /* font-weight: bold; */
+}
+
+.text-overlay-normal {
+  position: absolute;
+  top: 20%;
+  left: 29%;
+  margin-top: 40px;
+  margin-left: -120px;
+  transform: translate(-55%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(6, 23, 50);
+  /* font-weight: bold; */
+}
+/* class mini window */
+.course-intro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #CC8F00;
+  background-color: #FFEDC2;
+  margin-bottom: 15px;
+  text-shadow: 0 0 4px rgba(97, 175, 239, 0.5);
+}
+/* bullet points */
+ul.course-list {
+  list-style: none;
+  /* removes the default bullet */
+  padding-left: 0;
+  /* removes extra left spacing */
+}
+
+ul.course-list li {
+  position: relative;
+  padding-left: 24px;
+  /* space for custom bullet */
+}
+ul.course-list li::before {
+  content: "✦";
+  color: #61afef;
+  margin-right: 10px;
+  font-size: 16px;
+  /* text-shadow: 0 0 6px #61afef; */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+ul.course-list li:hover::before {
+  transform: scale(1.4);
+  text-shadow: 0 0 12px #61afef;
 }
 /*--------------------------------------------------------------
 # Sections General

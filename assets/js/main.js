@@ -269,4 +269,45 @@
    */
   new PureCounter();
 
+  // Tab switching logic
+  (function () {
+    "use strict";
+
+    // About Tabs
+    const aboutTabs = document.querySelectorAll('.about-tabs .tab');
+    const aboutTabContents = document.querySelectorAll('.about-tabs .tab-content');
+
+    aboutTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        aboutTabs.forEach(t => t.classList.remove('active'));
+        aboutTabContents.forEach(content => content.classList.remove('active'));
+
+        // Add active class to the clicked tab and its corresponding content
+        tab.classList.add('active');
+        const target = document.querySelector(`#${tab.dataset.tab}`);
+        target.classList.add('active');
+      });
+    });
+
+    // Education Tabs
+    const edTabs = document.querySelectorAll('.tab-ed');
+    const edContents = document.querySelectorAll('.tab-content-ed');
+
+    edTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        edTabs.forEach(t => t.classList.remove('active'));
+        edContents.forEach(c => c.classList.remove('active'));  // Use 'active' instead of 'active-ed'
+
+        // Add active class to clicked tab and matching content
+        tab.classList.add('active');
+        const target = tab.getAttribute('data-tab');
+        document.getElementById(target).classList.add('active'); // Ensure that the target content is marked as active
+      });
+    });
+    
+  })();
+
+
 })()
