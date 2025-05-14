@@ -13,26 +13,32 @@
   font-family: 'StrawberryMuffins';
   src: url(StrawberryMuffins.ttf);
 }
+
 @font-face {
   font-family: 'SourGummy';
   src: url(SourGummy.ttf);
 }
+
 @font-face {
   font-family: 'Eloquia';
   src: url(eloquia.ttf);
 }
+
 @font-face {
   font-family: 'Nunito';
   src: url(NunitoSans.ttf);
 }
+
 @font-face {
   font-family: 'Montserrat';
   src: url(Montserrat-Light.ttf);
 }
+
 @font-face {
   font-family: 'MontserratBold';
   src: url(Montserrat-SemiBold.ttf);
 }
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -365,6 +371,7 @@ h6 {
   animation: blink 1.5s infinite step-end;
   /* Adjust this time for blink speed */
 }
+
 @keyframes blink {
   50% {
     opacity: 0;
@@ -374,6 +381,7 @@ h6 {
     opacity: 1;
   }
 }
+
 /* end add */
 #hero .social-links a:hover {
   color: #0083fe;
@@ -382,6 +390,7 @@ h6 {
 #hero .social-links .gmail:hover {
   color: #b90000;
 }
+
 #hero .social-links .linkedin:hover {
   color: #005aad;
 }
@@ -402,6 +411,7 @@ h6 {
     line-height: 24px;
   }
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #ABOUT ME SECTION (I ADDED THIS)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -419,7 +429,7 @@ h6 {
   object-fit: cover;
   margin-top: 100px;
   margin-right: 200px;
-  
+
 }
 
 .tab-container {
@@ -461,7 +471,7 @@ h6 {
   line-height: 24px;
   display: none;
   overflow: hidden;
-  
+
 }
 
 .tab-content.active {
@@ -472,9 +482,9 @@ h6 {
   margin-left: 0px;
   line-height: 34px;
   justify-content: center;
-    /* horizontal */
+  /* horizontal */
   align-items: center;
-    /* vertical */
+  /* vertical */
 }
 
 .tag {
@@ -489,32 +499,35 @@ h6 {
   color: #61afef;
 }
 
-.emoji{
+.emoji {
   color: #56b6c2;
 }
+
 .emoji_final {
   color: #56b6c2;
   font-size: 24px;
 }
 
-.content_text{
+.content_text {
   color: rgb(255, 255, 255);
 }
+
 /* ----------------------------
 #EDUCATION SECTION TABS I ADDED THIS
 -------------------------------*/
 .tab-container-ed {
   position: relative;
-  width: 550px;
+  width: 530px;
   height: 450px;
   border: 2px solid white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 0 12px #61afef, 0 0 24px #61afef;
+  box-shadow: 0 0 12px rgb(134, 199, 255), 0 0 24px rgb(134, 199, 255);
   margin-left: 600px;
-  margin-top: -450px;;
+  margin-top: -450px;
+
 }
 
 .tabs-ed {
@@ -544,9 +557,12 @@ h6 {
   background-color: #fafafa;
   padding: 20px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   display: none;
   overflow: hidden;
+  overflow-y: auto;
+  padding-right: 50px;
+  padding-left: 50px;
 
 }
 
@@ -617,15 +633,33 @@ h6 {
   color: rgb(6, 23, 50);
   /* font-weight: bold; */
 }
+
 /* class mini window */
 .course-intro {
+  font-family: 'Montserratbold', sans-serif;
+  font-size: 18px;
+  color: #0555b6;
+  /* background-color: #FFEDC2; */
+  margin-bottom: 0px; 
+  text-align: left;
+
+}
+.course-intro-date {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: #CC8F00;
+  color: #0555b6;
+  /* background-color: #FFEDC2; */
+  margin-bottom: 15px;
+}
+.course-intro-type {
+  font-family: 'Montserratbold', sans-serif;
+  font-size: 14px;
+  color: #b69905;
   background-color: #FFEDC2;
   margin-bottom: 15px;
-  text-shadow: 0 0 4px rgba(97, 175, 239, 0.5);
+
 }
+
 /* bullet points */
 ul.course-list {
   list-style: none;
@@ -636,9 +670,9 @@ ul.course-list {
 
 ul.course-list li {
   position: relative;
-  padding-left: 24px;
   /* space for custom bullet */
 }
+
 ul.course-list li::before {
   content: "✦";
   color: #61afef;
@@ -652,6 +686,7 @@ ul.course-list li:hover::before {
   transform: scale(1.4);
   text-shadow: 0 0 12px #61afef;
 }
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -735,6 +770,7 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 /* attempt to add a call out */
 /* Callout box - fixed position at the bottom of the page */
 .callout {
