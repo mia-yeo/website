@@ -642,6 +642,9 @@ h6 {
   /* background-color: #FFEDC2; */
   margin-bottom: 0px; 
   text-align: left;
+  margin-top: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
 
 }
 .course-intro-date {
@@ -650,6 +653,8 @@ h6 {
   color: #0555b6;
   /* background-color: #FFEDC2; */
   margin-bottom: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .course-intro-type {
   font-family: 'Montserratbold', sans-serif;
@@ -657,14 +662,46 @@ h6 {
   color: #b69905;
   background-color: #FFEDC2;
   margin-bottom: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
 
+  
+}
+.education-window {
+  position: relative;
+  width: 530px;
+  height: 450px;
+  /* border: 2px solid white; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgb(134, 199, 255), 0 0 24px rgb(134, 199, 255);
+  margin-left: 600px;
+  margin-top: -450px;
+  overflow-y: scroll;
+}
+.education-header {
+  background-color: rgb(181, 181, 181);
+  color: rgb(198, 198, 198);
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  /* border-bottom: 2px solid #61afef; */
+  flex-shrink: 0;
+  text-align: center;
+  position: sticky;       /* key */
+  top: 0;                 /* key */
+  z-index: 1;             /* ensure it stays above content */
 }
 
 /* bullet points */
 ul.course-list {
   list-style: none;
   /* removes the default bullet */
-  padding-left: 0;
+  font-size: 14px;
+  padding-right: 50px;
+  padding-left: 50px;
   /* removes extra left spacing */
 }
 
