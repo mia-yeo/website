@@ -5,6 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 (function() {
   "use strict";
 
@@ -308,6 +309,39 @@
     });
     
   })();
+
+  // making pictures larger
+  // Click to toggle zoom on individual image
+  const zoomModal = document.getElementById("zoomModal");
+  const zoomedImage = document.getElementById("zoomedImage");
+  const closeBtn = document.querySelector(".zoom-close");
+
+  // Open modal when image is clicked
+  document.querySelectorAll('.zoom-img').forEach(img => {
+    img.addEventListener('click', () => {
+      zoomedImage.src = img.src;
+      zoomModal.style.display = "flex";
+    });
+  });
+
+  // Close modal on click of close button or outside image
+  closeBtn.addEventListener('click', () => {
+    zoomModal.style.display = "none";
+  });
+
+  zoomModal.addEventListener('click', (e) => {
+    if (e.target === zoomModal) {
+      zoomModal.style.display = "none";
+    }
+  });
+
+  // Close with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      zoomModal.style.display = "none";
+    }
+  });
+
 
 
 })()

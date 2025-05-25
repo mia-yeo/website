@@ -9,6 +9,12 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Swiper CSS - PLACE IT HERE -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+  
+  <!-- Your custom CSS should go after Swiper -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -27,14 +33,22 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
+  
+
   <!-- =======================================================
   * Template Name: MyResume
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Updated: iul 27 2023 with Bootstrap v5.3.1
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<!-- Simple Image Modal -->
+<div id="zoomModal" class="zoom-modal">
+  <span class="zoom-close">&times;</span>
+  <img class="zoom-modal-img" id="zoomedImage" src="" alt="Zoomed Image">
+</div>
 
 <body>
 
@@ -43,60 +57,58 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper shift-right">
-              <div class="swiper-wrapper align-items-center ">
-
+              <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/experiences/mal_ex.png" alt="">
+                  <img src="assets/img/experiences/mal_ex.png" class="zoom-img trigger-modal" data-index="0" alt="Zoomable image">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/experiences/mal_infographic.png" alt="">
+                  <img src="assets/img/experiences/mal_infographic.png" class="zoom-img trigger-modal" data-index="1"
+                    alt="Zoomable image">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/experiences/mal_hidden.png" alt="">
+                  <img src="assets/img/experiences/mal_hidden.png" class="zoom-img trigger-modal" data-index="2" alt="Zoomable image">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
+    
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <!-- <li><strong>Category</strong>: Web design</li> -->
-                <!-- <li><strong>Client</strong>: ASU Company</li> -->
                 <li><strong>Project date</strong>: January, 2024</li>
-                <li><strong>Project URL</strong>: 
-                  <a href="https://dl.acm.org/doi/pdf/10.1145/3643834.3660747" target="_blank" style="font-family: 'Montserrat';">
-                  “Malicious” Pictorials <i class="bx bx-link"></i>
+                <li><strong>Project URL</strong>:
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3643834.3660747" target="_blank"
+                    style="font-family: 'Montserrat';">
+                    “Malicious” Pictorials <i class="bx bx-link"></i>
                   </a>
                 </li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Project detail</h2>
-              <p>
-                <ul class="experience-info">
-                  <li> Aided in analyzing reseach papers and organizing on spreadsheet </li>
-                  <li> Worked with team member in creating inforgraphic layout and design </li>
-                  <li> Resonisble for integrating the "monsters" throughout the paper</li>
-                </ul>
-              </p>
+              <ul class="experience-info">
+                <li> Collaborated with team members to extract and categorize accessibility-related data into structured
+                  tracking sheets </li>
+                <li> Co-developed an infographic to summarize technical research findings </li>
+                <li> Responsible for designing custom page layouts to integrate “monster” elements throughout the paper
+                </li>
+              </ul>
             </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
+
+    
+   
+
+
+
 
   </main><!-- End #main -->
 
