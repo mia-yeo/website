@@ -235,6 +235,15 @@
     }
   });
 
+  new Swiper('.melanin-swiper', {
+    speed: 400,
+    loop: true,
+    pagination: {
+      el: '.melanin-swiper .swiper-pagination',
+      clickable: true,
+    },
+  });
+
   /**
    * Testimonials slider
    */
@@ -312,35 +321,42 @@
 
   // making pictures larger
   // Click to toggle zoom on individual image
-  const zoomModal = document.getElementById("zoomModal");
-  const zoomedImage = document.getElementById("zoomedImage");
-  const closeBtn = document.querySelector(".zoom-close");
+    //--Swiper Init-- 
 
-  // Open modal when image is clicked
-  document.querySelectorAll('.zoom-img').forEach(img => {
-    img.addEventListener('click', () => {
-      zoomedImage.src = img.src;
-      zoomModal.style.display = "flex";
+    // const swiper = new Swiper('.swiper', {
+    //   loop: true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    //   // navigation: {
+    //   //   nextEl: '.swiper-button-next',
+    //   //   prevEl: '.swiper-button-prev',
+    //   // },
+    // });
+
+
+//!--Zoom Script-- >
+  
+      document.getElementById('zoom-carousel-btn').addEventListener('click', function () {
+      const activeSlide = document.querySelector('.swiper-slide-active img');
+      const modal = document.getElementById('zoomModal');
+      const modalImg = document.getElementById('zoomedImage');
+      if (activeSlide) {
+        modalImg.src = activeSlide.src;
+      modal.style.display = 'flex';
+      }
     });
-  });
 
-  // Close modal on click of close button or outside image
-  closeBtn.addEventListener('click', () => {
-    zoomModal.style.display = "none";
-  });
+      document.querySelector('.zoom-close').addEventListener('click', function () {
+        document.getElementById('zoomModal').style.display = 'none';
+    });
 
-  zoomModal.addEventListener('click', (e) => {
-    if (e.target === zoomModal) {
-      zoomModal.style.display = "none";
-    }
-  });
-
-  // Close with Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      zoomModal.style.display = "none";
-    }
-  });
+      document.getElementById('zoomModal').addEventListener('click', function (e) {
+      if (e.target.id === 'zoomModal') {
+        this.style.display = 'none';
+      }
+    });
 
 
 

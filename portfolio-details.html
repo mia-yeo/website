@@ -1,40 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Swiper CSS - PLACE IT HERE -->
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
-  
-  <!-- Your custom CSS should go after Swiper -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
-  
 
   <!-- =======================================================
   * Template Name: MyResume
@@ -43,47 +9,90 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<!-- <head> -->
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <!-- Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
 </head>
-<!-- Simple Image Modal -->
-<div id="zoomModal" class="zoom-modal">
-  <span class="zoom-close">&times;</span>
-  <img class="zoom-modal-img" id="zoomedImage" src="" alt="Zoomed Image">
-</div>
 
 <body>
+  <!-- Modal -->
+  <div id="zoomModal" class="zoom-modal">
+    <span class="zoom-close">&times;</span>
+    <img class="zoom-modal-img" id="zoomedImage" src="" alt="Zoomed Image" />
+  </div>
 
   <main id="main">
-
-    <!-- ======= Portfolio Details Section ======= -->
+    <!-- this section is for malicious pictorials -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
         <div class="row gy-4">
+          <!-- Carousel -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper shift-right">
-              <div class="swiper-wrapper align-items-center">
+              <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/img/experiences/mal_ex.png" class="zoom-img trigger-modal" data-index="0" alt="Zoomable image">
+                  <img src="assets/img/experiences/mal_ex.png" class="zoom-img" alt="Zoomable image" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/experiences/mal_infographic.png" class="zoom-img trigger-modal" data-index="1"
-                    alt="Zoomable image">
+                  <img src="assets/img/experiences/mal_infographic.png" class="zoom-img" alt="Zoomable image" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/experiences/mal_hidden.png" class="zoom-img trigger-modal" data-index="2" alt="Zoomable image">
+                  <img src="assets/img/experiences/mal_hidden.png" class="zoom-img" alt="Zoomable image" />
                 </div>
               </div>
+              <!-- Pagination & nav (optional) -->
               <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
             </div>
+
+            <!-- Static Zoom Button -->
+            <button id="zoom-carousel-btn" class="zoom-btn mt-10"
+              class="zoom-btn mt-10"
+              style="display: flex; align-items: center; gap: 6px; line-height: -1; font-size: 16px;">
+            <i class="bx bx-search-alt" style="font-size: 24px; line-height: .5;"></i>
+            <span style="display: inline-block; line-height: 1;">zoom</span>
+
+
           </div>
-    
+
+          <!-- Project Info  (for malicious pictorials)-->
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
                 <li><strong>Project date</strong>: January, 2024</li>
                 <li><strong>Project URL</strong>:
-                  <a href="https://dl.acm.org/doi/pdf/10.1145/3643834.3660747" target="_blank"
-                    style="font-family: 'Montserrat';">
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3643834.3660747" target="_blank">
                     “Malicious” Pictorials <i class="bx bx-link"></i>
                   </a>
                 </li>
@@ -92,22 +101,77 @@
             <div class="portfolio-description">
               <h2>Project detail</h2>
               <ul class="experience-info">
-                <li> Collaborated with team members to extract and categorize accessibility-related data into structured
-                  tracking sheets </li>
-                <li> Co-developed an infographic to summarize technical research findings </li>
-                <li> Responsible for designing custom page layouts to integrate “monster” elements throughout the paper
+                <li>Collaborated with team members to extract and categorize accessibility-related data into structured
+                  tracking sheets</li>
+                <li>Co-developed an infographic to summarize technical research findings</li>
+                <li>Designed custom page layouts to integrate “monster” elements throughout the paper</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- this section is for melanin flourish -->
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Carousel -->
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper melanin-swiper shift-right">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/img/experiences/melanin_nobg.png" class="zoom-img" alt="Zoomable image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/experiences/mal_infographic.png" class="zoom-img" alt="Zoomable image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/experiences/mal_hidden.png" class="zoom-img" alt="Zoomable image" />
+                </div>
+              </div>
+              <!-- Pagination & nav (optional) -->
+              <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+            </div>
+    
+            <!-- Static Zoom Button -->
+            <!-- <button id="zoom-carousel-btn" class="zoom-btn mt-10" class="zoom-btn mt-10" -->
+            <button class="zoom-carousel-btn zoom-btn mt-10"
+              style="display: flex; align-items: center; gap: 6px; line-height: -1; font-size: 16px;">
+              <i class="bx bx-search-alt" style="font-size: 24px; line-height: .5;"></i>
+              <span style="display: inline-block; line-height: 1;">zoom</span>
+            </button>
+    
+    
+          </div>
+    
+          <!-- Project Info -->
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project date</strong>: October, 2024</li>
+                <li><strong>Project URL</strong>:
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3643834.3660747" target="_blank">
+                    “Malicious” Pictorials <i class="bx bx-link"></i>
+                  </a>
                 </li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Project detail</h2>
+              <ul class="experience-info">
+                <li>Collaborated with team members to extract and categorize accessibility-related data into structured
+                  tracking sheets</li>
+                <li>Co-developed an infographic to summarize technical research findings</li>
+                <li>Designed custom page layouts to integrate “monster” elements throughout the paper</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    
-   
-
-
 
 
   </main><!-- End #main -->
@@ -125,6 +189,8 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
