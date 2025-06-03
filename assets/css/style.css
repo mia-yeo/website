@@ -1269,13 +1269,14 @@ ul.experience-info{
 
 ul.experience-info li {
   position: relative;
+  text-indent: -25px; 
   /* space for custom bullet */
 }
 
 ul.experience-info li::before {
   content: "✦";
   color: #61afef;
-  margin-left: -30px;
+  margin-left: 0px;
   margin-right: 10px;
   font-size: 16px;
   /* text-shadow: 0 0 6px #61afef; */
