@@ -178,8 +178,11 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+/* attempt horizon */
+/* testing */
+
 /**
-* Desktop Navigation 
+* Desktop Navigation vertical
 */
 .nav-menu {
   padding: 0;
@@ -456,6 +459,7 @@ h6 {
   background-color: rgb(6, 23, 50);
   border-bottom: 2px solid transparent;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .tab.active {
@@ -471,6 +475,7 @@ h6 {
   line-height: 24px;
   display: none;
   overflow: hidden;
+  overflow-x: hidden;
 
 }
 
@@ -479,7 +484,7 @@ h6 {
 }
 
 .tab-inner {
-  margin-left: 0px;
+  margin-left: -30px;
   line-height: 34px;
   justify-content: center;
   /* horizontal */
